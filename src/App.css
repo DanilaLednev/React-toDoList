@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Peralta', serif;
+  color: rgb(22, 21, 21);
+}
+body {
+  background-image:linear-gradient(#2E5584 ,#062b4e );
+}
+.App {
+  width: clamp(300px, 450px, 550px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10% 0;
+  border-radius: 5px;
+}
+h1 {
+  font-size: clamp(20px, 5vw, 40px);
+  text-align: center;
+  margin-bottom: 5px;
+}
+.container-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-now p,
+.date-now p, 
+input, 
+button{
+  color: rgb(22, 21, 21);
+  font-size: clamp(18px, 2vw, 26px);
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container input, ul {
+  width: 80%;
+}
+.container input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+.btn-add {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  padding: 0 3px;
+  background-color: rgb(27, 121, 27);
+}
+.container  ul>li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  padding: 5px;
+  transition: 1.2s ease;
+}
+.btn-delete {
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgb(189, 48, 23);
+  border: none;
+}
+.done {
+  text-decoration: line-through 2px #D24545;
+  color: rgba(245, 245, 220, 0.581);
+}
