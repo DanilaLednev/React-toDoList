@@ -10,7 +10,6 @@ export class Schedule extends Component {
 
   onChangeEvent(e) {
     this.setState({ userInput: e });
-    console.log(e)
   }
 
   addItem(input) {
@@ -22,7 +21,6 @@ export class Schedule extends Component {
     let taskArray = this.state.taskList;
     taskArray.push(input);
     this.setState({ taskList: taskArray, userInput: "" });
-    console.log(taskArray);
   }
 
 
